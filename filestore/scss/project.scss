@@ -350,6 +350,10 @@ main.project {
                 margin-top: 5.8rem;
             }
 
+            img + .wide-image {
+                margin-top: 6rem;
+            }
+
             .wide-image + img {
                 margin-top: 6.4rem;
             }
@@ -449,6 +453,10 @@ main.project {
                     margin-top: 4.5rem;
                 }
 
+                img + .wide-image {
+                    margin-top: 4.8rem;
+                }
+
                 .wide-image + img {
                     margin-top: 4.8rem;
                 }
@@ -501,6 +509,10 @@ main.project {
                     margin-top: 4rem;
                 }
 
+                img + .wide-image {
+                    margin-top: 3.2rem;
+                }
+
                 .wide-image + img {
                     margin-top: 3.2rem;
                 }
@@ -529,6 +541,47 @@ main.project {
 
         @include mobile {
             column-gap: 0;
+        }
+    }
+
+    .project-nav {
+        align-items: center;
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        justify-content: space-between;
+
+        a {
+            align-items: center;
+            color: $color-black;
+            display: inline-flex;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $color-brand;
+            }
+
+            &:first-child {
+
+                svg {
+                    margin-right: .8rem;
+                }
+            }
+
+            &:nth-child(2) {
+
+                svg {
+                    margin-left: .8rem;
+                }
+            }
+        }
+
+        @include tablet {
+            grid-column-end: 9;
+        }
+
+        @include mobile {
+            grid-column-end: 5;
         }
     }
 }
