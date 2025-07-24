@@ -24,76 +24,6 @@
         }
     }
 
-
-/* About me profile page */
-
-&.about {
-
-    /* About me hero */
-
-    .project-hero-img {
-        grid-column-start: 8;
-        grid-column-end: 12;
-    }
-
-    #project-content .project-grid {
-
-        p {
-            grid-column-start: 4;
-            grid-column-end: 10;
-        }
-
-        img {
-            grid-column-start: 4;
-            grid-column-end: 10;
-            margin-bottom: 12rem;
-        }
-    }
-
-    @include tablet {
-
-        .project-hero-img {
-            grid-column-start: 1;
-            grid-column-end: 5;
-        }
-
-        #project-content .project-grid {
-
-            p {
-                grid-column-start: 1;
-                grid-column-end: 8;
-            }
-
-            img {
-                grid-column-start: 1;
-                grid-column-end: 9;
-                margin-bottom: 8rem;
-            }
-        }
-    }
-
-    @include mobile {
-
-        .project-hero-img {
-            grid-column-start: 1;
-            grid-column-end: 5;
-        } 
-
-        #project-content .project-grid {
-
-            p {
-                grid-column-start: 1;
-                grid-column-end: 5;
-            }
-
-            img {
-                grid-column-start: 1;
-                grid-column-end: 5;
-            }
-        }
-    }
-}
-
     .project-hero-meta {
         grid-column-start: 1;
         grid-column-end: 6;
@@ -222,6 +152,74 @@
 
             img {
                 border-radius: 1.6rem;
+            }
+        }
+    }
+    /* About me profile page */
+
+    &.about {
+
+        /* About me hero */
+
+        .project-hero-img {
+            grid-column-start: 8;
+            grid-column-end: 12;
+        }
+
+        #project-content .project-grid {
+
+            p {
+                grid-column-start: 4;
+                grid-column-end: 10;
+            }
+
+            img {
+                grid-column-start: 4;
+                grid-column-end: 10;
+                margin-bottom: 12rem;
+            }
+        }
+
+        @include tablet {
+
+            .project-hero-img {
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            #project-content .project-grid {
+
+                p {
+                    grid-column-start: 1;
+                    grid-column-end: 8;
+                }
+
+                img {
+                    grid-column-start: 1;
+                    grid-column-end: 9;
+                    margin-bottom: 8rem;
+                }
+            }
+        }
+
+        @include mobile {
+
+            .project-hero-img {
+                grid-column-start: 1;
+                grid-column-end: 5;
+            } 
+
+            #project-content .project-grid {
+
+                p {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
+
+                img {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
             }
         }
     }
