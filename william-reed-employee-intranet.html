@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description">
+    <link rel="canonical" href="">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
+    <title>Caitlin Watson's Portfolio</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/screen.css">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+</head>
+
+<body class="project">
+
+    <header id="navigation">
+        <div class="logo">
+            <a href="/index.html" title="Visit Caitlin Watson's Homepage">Caitlin Watson</a>
+        </div>
+        <div id="burger-menu">
+            <span></span>
+        </div>
+        <div id="menu">
+            <a class="portfolio" href="/index.html" title="Visit portfolio">Portfolio</a>
+            <a class="about" href="/about.html" title="Visit about page">About</a>
+            <a href="mailto:caitlinwatsondesign@gmail.com" title="Email Caitlin Watson">Contact</a>
+        </div>
+    </header>
+
+    <main id="top" class="page-grid">
+        <section id="project-hero" class="page-grid">
+            <div class="project-hero-meta">
+                <h2 class="sub-headline">Project</h2>
+                <h1>William Reed Employee Intranet</h1>
+                <ul class="tags">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                </ul>
+                <p>William Reed operates across the UK, France, the US, and Singapore. Its previous intranet was fragmented, hard to navigate, and lacking in user engagement. The company needed a rebuild that aligned with a new brand direction, worked across global regions, and functioned as an everyday digital workspace for every employee.</p>
+            </div>
+            <div class="project-hero-img">
+                <img src="./assets/jpg/intranet-lead.jpg" alt="An open laptop on a coffee table in a livingroom featuring the William Reed Intranet landing page" height="670" width="919">
+            </div>
+        </section>
+        <section id="project-content">
+            <div class="project-grid page-grid">
+                <h3>My role</h3>
+                <p>I owned the full digital design process, from information architecture through to front-end build. I created wireframes, designed a modular UI system based on the new William Reed brand, and developed HTML and SASS templates. I worked closely with developers to ensure a smooth CMS integration.</p>
+                <h3>Requirements</h3>
+                <p>The new intranet had to be practical, lightweight, and easy to navigate. The specification included detailed functionality, which I translated into a flexible layout system that could accommodate different types of content: internal news, policy documents, HR resources and community posts.</p>
+                <img class="modal-target" src="./assets/jpg/intranet-menu.jpg" alt="" height="780" width="1053" alt="A laptop screen of an open side menu on the Intranet homepage">
+                
+                <h3>Homepage</h3>
+                <p>The homepage was designed around core tasks and information. I included a business news section, a block for community stories, a quick links area, and a widget to show global office time zones. All of this was structured to help users find what they need quickly without having to click through multiple levels.</p>
+                <img class="modal-target" src="./assets/jpg/intranet-hp.jpg" alt="" height="780" width="1053" alt="A laptop screen of the Intranet homepage">
+                <p>Content creation had to be simple. I designed a way for staff to post community updates directly from the homepage without needing CMS access. For business posts, there were admin tools for HR to manage featured content and news visibility.</p>
+                <img class="modal-target" src="./assets/jpg/intranet-article-modal.jpg" alt="" height="780" width="1053" alt="A pop-up modal containing a WYSIWYG to leave a news post">
+                
+                <h3>Company news</h3>
+                <p>The news board was split into two areas: business news and community posts. Users could switch between them with a simple toggle, and content was ordered from newest to oldest posts. Each post displayed the headline, author, date, number of interactions and a visual. The layout was kept clean and easy to scan, helping users stay up to date with minimal friction.</p>
+                <img class="modal-target" src="./assets/jpg/intranet-news.jpg" alt="" height="780" width="1053" alt="A grid of business and community news articles">
+                <img class="modal-target" src="./assets/jpg/intranet-news-post.jpg" alt="" height="780" width="1053" alt="A pop-up modal containing a WYSIWYG to leave a news post">
+                
+                <h3>Article</h3>
+                <p>The article page introduced new functionality that hadn’t been part of the previous system. Logged-in users could now “like” posts and leave comments, creating a space for conversation around internal news and updates. Comments were displayed beneath the article with clear time stamps and names, encouraging transparency and engagement without overwhelming the layout.</p>
+                <img class="modal-target" src="./assets/jpg/wr-intranet-comments.jpg" alt="" height="" width="1053" alt="A grid showing each state of the comment section for an article">
+                <img class="modal-target" src="./assets/jpg/intranet-article.jpg" alt="" height="780" width="1053" alt="An article featuring the article content on the left and the comment block on the right">
+                <img class="modal-target" src="./assets/jpg/intranet-article2.jpg" alt="" height="780" width="1053" alt="A scrolled state of the article, with the comment block following down the page">
+                               
+                <h3>Search</h3>
+                <p>The search function was a key part of the experience. I designed a dedicated search results page and simple global search bar that would pull content from articles, business posts and policy documents.</p>
+                <img class="modal-target" src="./assets/jpg/intranet-search.jpg" alt="" height="780" width="1053" alt="A search results page with an active search and a list of text results underneath">
+
+                <h3>Policies</h3>
+                <p>The policies section needed to filter content by region. I designed a dedicated policies landing page and policies list view to keep documentation structured and easy to browse, depending on the user’s location.</p>
+                <img class="modal-target" src="./assets/jpg/intranet-policies.jpg" alt="" height="780" width="1053" alt="A grid of dropdowns that list out the William Reed policies">
+
+                <h3>Visual design</h3>
+                <p>The UI followed William Reed’s updated brand, using its latest colours, typography and tone. I designed the pages to feel open, modern and easy to navigate, focusing on clarity and simplicity.</p>
+
+            </div>
+
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+                <span id="modal-close" class="modal-close"></span>
+                <div class="modal-content-wrapper">
+                    <img id="modal-content" class="modal-content">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="next-project">
+        <a class="project-container" href="/the-worlds-50-best-preference-centre.html" title="Visit the project The World's 50 Best Preference Centre">
+            <p class="sub-headline">Next Project</p>
+            <h2>The World’s 50 Best: Preference Centre</h2>
+
+            <div class="next-img">
+                <img src="./assets/jpg/world50b-thumb.jpg" alt="A picture of someone scrolling a phone using the The World's 50 Best Preference Centre">
+            </div>
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <a class="footer_logo" href="/index.html" title="Visit Caitlin Watson's homepage">Caitlin Watson</a>
+            <a class="back-to-top" href="#top" title="Scroll to the top of the page">
+                back to top 
+            </a>
+        </div>
+        <p class="footer-author">
+            coded by Caitlin
+        </p>
+    </footer>
+</body>
+
+<script>
+
+    /* Burger mobile menu */
+
+    var burgerMenu = document.getElementById('burger-menu');
+
+    var overlay = document.getElementById('menu');
+
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle("open");
+        overlay.classList.toggle("overlay");
+    });
+
+</script>
+
+<script>
+    
+    // Modal Setup
+    var modal = document.getElementById('modal');
+
+    var modalClose = document.getElementById('modal-close');
+    modalClose.addEventListener('click', function() { 
+    modal.style.display = "none";
+    });
+
+    // global handler
+    document.addEventListener('click', function (e) { 
+        if (e.target.className.indexOf('modal-target') !== -1) {
+            var img = e.target;
+            var modalImg = document.getElementById("modal-content");
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+        }
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+</script>
+
+</html>

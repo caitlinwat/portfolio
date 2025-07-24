@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description">
+    <link rel="canonical" href="">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
+    <title>Caitlin Watson's Portfolio</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/screen.css">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+</head>
+
+<body class="portfolio">
+
+    <header id="navigation">
+        <div class="logo">
+            <a href="/index.html" title="Visit Caitlin Watson's Homepage">Caitlin Watson</a>
+        </div>
+        <div id="burger-menu">
+            <span></span>
+        </div>
+        <div id="menu">
+            <a class="portfolio" href="/index.html" title="Visit portfolio">Portfolio</a>
+            <a class="about" href="/about.html" title="Visit about page">About</a>
+            <a href="mailto:caitlinwatsondesign@gmail.com" title="Email Caitlin Watson">Contact</a>
+        </div>
+    </header>
+
+    <main id="top" class="page-grid">
+        <section id="homepage-hero">
+            <h1>Hi! I’m Caitlin, a web and digital designer crafting user-focused and visually compelling digital experiences.</h1>
+        </section>
+        <section id="homepage-content">
+            <h2 class="sub-headline">Projects</h2>
+            <div class="project-grid">
+                <ul class="project-list">
+                    <li class="project-card">
+                        <a href="/the-worlds-50-best-preference-centre.html">
+                            <div class="project-thumb">
+                                <img src="./assets/jpg/world50b-thumb.jpg" alt="The World’s 50 Best: Preference Centre">
+                            </div>
+                            <div class="project-meta">
+                                <ul class="tags">
+                                    <li class="tag">Design</li>
+                                    <li class="tag">Development</li>
+                                </ul>
+                                <h2>The World’s 50 Best: Preference Centre</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-card">
+                        <a href="#">
+                            <div class="project-thumb">
+                                <img src="./assets/jpg/worldsbestsommerliersselection-thumb.jpg" alt="World's Best Sommeliers’ Selection">
+                            </div>
+                            <div class="project-meta">
+                                <ul class="tags">
+                                    <li class="tag">Design</li>
+                                    <li class="tag">Development</li>
+                                </ul>
+                                <h2>World's Best Sommeliers’ Selection</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-card">
+                        <a href="#">
+                            <div class="project-thumb">
+                                <img src="./assets/jpg/csf-thumb.jpg" alt="Climate Smart Food Broadcast Series">
+                            </div>
+                            <div class="project-meta">
+                                <ul class="tags">
+                                    <li class="tag">Design</li>
+                                    <li class="tag">Development</li>
+                                    <li class="tag">Branding</li>
+                                </ul>
+                                <h2>Climate Smart Food Broadcast Series</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-card">
+                        <a href="#">
+                            <div class="project-thumb">
+                                <img src="./assets/jpg/luminaintelligence-thumb.jpg" alt="Lumina Intelligence">
+                            </div>
+                            <div class="project-meta">
+                                <ul class="tags">
+                                    <li class="tag">Design</li>
+                                    <li class="tag">Branding</li>
+                                </ul>
+                                <h2>Lumina Intelligence</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-card">
+                        <a href="#">
+                            <div class="project-thumb">
+                                <img src="./assets/jpg/theglobalfoodtechawards-thumb.jpg" alt="The Global Food Tech Awards">
+                            </div>
+                            <div class="project-meta">
+                                <ul class="tags">
+                                    <li class="tag">Design</li>
+                                    <li class="tag">Development</li>
+                                    <li class="tag">Branding</li>
+                                </ul>
+                                <h2>The Global Food Tech Awards</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-card">
+                        <a href="#">
+                            <div class="project-thumb">
+                                <img src="./assets/jpg/intranet-thumb.jpg" alt="William Reed Employee Intranet">
+                            </div>
+                            <div class="project-meta">
+                                <ul class="tags">
+                                    <li class="tag">Design</li>
+                                    <li class="tag">Development</li>
+                                </ul>
+                                <h2>William Reed Employee Intranet</h2>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <a class="footer_logo" href="/index.html">Caitlin Watson</a>
+            <a class="back-to-top" href="#top">
+                back to top 
+            </a>
+        </div>
+        <p class="footer-author">
+            coded by Caitlin
+        </p>
+    </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+<script>
+
+    /* Burger mobile menu */
+
+    var burgerMenu = document.getElementById('burger-menu');
+
+    var overlay = document.getElementById('menu');
+
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle("open");
+        overlay.classList.toggle("overlay");
+    });
+
+    /* Scrolling GSAP animation */
+
+    gsap.registerPlugin(ScrollTrigger);
+    
+    const cards = document.querySelectorAll(".project-card");
+
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 800px)", () => {
+        // desktop setup code here...
+        cards.forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 95%",
+                    toggleActions: "play none none reverse", 
+                },
+                opacity: 0,
+                y: 80,
+                duration: 0.8,
+                delay: i * 0.1, // slight offset between cards
+                ease: "power3.out"
+            });
+        });
+    });
+
+    mm.add("(max-width: 799px)", () => {
+    // mobile setup code here...
+        // desktop setup code here...
+        cards.forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 90%",
+                    toggleActions: "play none none reverse", 
+                },
+                opacity: 0,
+                y: 20,
+                duration: 0.8,
+                delay: i * 0.1, // slight offset between cards
+                ease: "power3.out"
+            });
+        });
+    });
+
+</script>
+
+</html>

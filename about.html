@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description">
+    <link rel="canonical" href="">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
+    <title>Caitlin Watson's Portfolio</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/screen.css">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+</head>
+
+<body class="project about">
+
+    <header id="navigation">
+        <div class="logo">
+            <a href="/index.html" title="Visit Caitlin Watson's Homepage">Caitlin Watson</a>
+        </div>
+        <div id="burger-menu">
+            <span></span>
+        </div>
+        <div id="menu">
+            <a class="portfolio" href="/index.html" title="Visit portfolio">Portfolio</a>
+            <a class="about" href="/about.html" title="Visit about page">About</a>
+            <a href="mailto:caitlinwatsondesign@gmail.com" title="Email Caitlin Watson">Contact</a>
+        </div>
+    </header>
+
+    <main id="top" class="page-grid">
+        <section id="project-hero" class="page-grid">
+            <div class="project-hero-meta">
+                <h2 class="sub-headline">About me</h2>
+                <h1>Designing better digital experiences through craft, clarity and care.</h1>
+                <p>I’m a web and digital designer with over seven years of experience working in the B2B space. I take a multidisciplinary approach to design, blending branding, UX, visual design, and front-end development to create thoughtful, effective digital products.</p>
+            </div>
+            <div class="project-hero-img">
+                <img src="./assets/jpg/me.jpg" alt="Profile picture of me" height="600" width="800">
+            </div>
+        </section>
+        <section id="project-content" class="about-content">
+            <div class="project-grid page-grid">
+                <p>My focus is on improving how users experience brands and platforms through research, close collaboration, and keeping an eye on real-world performance and trends. I’ve worked on award-winning digital products, including The World's 50 Best website that helped our team win “Product Development Team of the Year” at the 2024 Digital Publishing Awards.</p>
+                <p>I believe in working with purpose, growing through every project, and raising the bar in every collaboration. I care about good ideas, clear communication, and well-crafted work.</p>
+                <p>Outside of design, I’m into craft, nature and hanging out with my cat, Solly!</p>
+                <img class="modal-target" src="./assets/jpg/solly-cat.jpg" alt="An above picture of a black and white tuxedo cat looking up at the camera" height="780" width="1053">
+            </div>
+
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+                <span id="modal-close" class="modal-close"></span>
+                <div class="modal-content-wrapper">
+                    <img id="modal-content" class="modal-content">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <a class="footer_logo" href="/index.html" title="Visit Caitlin Watson's homepage">Caitlin Watson</a>
+            <a class="back-to-top" href="#top" title="Scroll to the top of the page">
+                back to top 
+            </a>
+        </div>
+        <p class="footer-author">
+            coded by Caitlin
+        </p>
+    </footer>
+</body>
+
+<script>
+
+    /* Burger mobile menu */
+
+    var burgerMenu = document.getElementById('burger-menu');
+
+    var overlay = document.getElementById('menu');
+
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle("open");
+        overlay.classList.toggle("overlay");
+    });
+
+</script>
+
+<script>
+    
+    // Modal Setup
+    var modal = document.getElementById('modal');
+
+    var modalClose = document.getElementById('modal-close');
+    modalClose.addEventListener('click', function() { 
+    modal.style.display = "none";
+    });
+
+    // global handler
+    document.addEventListener('click', function (e) { 
+        if (e.target.className.indexOf('modal-target') !== -1) {
+            var img = e.target;
+            var modalImg = document.getElementById("modal-content");
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+        }
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+</script>
+
+</html>

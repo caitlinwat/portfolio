@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description">
+    <link rel="canonical" href="">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
+    <title>Portfolio: The World's 50 Best Preference Centre</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/screen.css">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body class="project">
+
+    <header id="navigation">
+        <div class="logo">
+            <a href="/index.html" title="Visit Caitlin Watson's Homepage">Caitlin Watson</a>
+        </div>
+        <div id="burger-menu">
+            <span></span>
+        </div>
+        <div id="menu">
+            <a class="portfolio" href="/index.html" title="Visit portfolio">Portfolio</a>
+            <a class="about" href="/about.html" title="Visit about page">About</a>
+            <a href="mailto:caitlinwatsondesign@gmail.com" title="Email Caitlin Watson">Contact</a>
+        </div>
+    </header>
+
+    <main id="top" class="page-grid">
+        <section id="project-hero" class="page-grid">
+            <div class="project-hero-meta">
+                <h2 class="sub-headline">Project</h2>
+                <h1>The World's 50 Best: Preference Centre</h1>
+                <ul class="tags">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                </ul>
+                <p>The Preference Centre is a new digital product within The World’s 50 Best brand sphere, designed to enhance user engagement and data collection. It enables users to favourite award-winning establishments, save and share curated lists, personalise content preferences, and stay updated with the latest award news.</p>
+            </div>
+            <div class="project-hero-img">
+                <img src="./assets/jpg/w50best-lead-img.jpg" alt="A picture of someone scrolling a phone using the The World's 50 Best Preference Centre" height="670" width="919">
+            </div>
+        </section>
+        <section id="project-content">
+            <div class="project-grid page-grid">
+                <h3>Registration Flow</h3>
+                <p>One of the early challenges was designing a user-friendly registration experience that collected meaningful data without overwhelming users. Drawing on best UX practices, such as Hick's Law, I proposed a multi-step flow that simplified the process.</p>
+                <img class="modal-target" src="./assets/jpg/w50b-sign-in.jpg" alt="Someone holding a mobile phone with the sign-up screen for The World's 50 Best" height="780" width="1053">
+                <p>Rather than redirecting users to a long form, registration was broken into manageable steps that were presented one at a time using card components. Each step gave users a sense of progression, with visual cues to show completed stages.</p>
+                <p>This helped maintain the user's focus and kept them engaged in the context of the page they were already interacting with. The goal was to make registration feel like a seamless part of the broader experience, not an interruption to it.</p>
+                <img class="modal-target" src="./assets/jpg/w50b-registration-flow.jpg" alt="A visual of each registration step for The World's 50 Best Preference Centre" height="780" width="1053">
+                <img class="modal-target" src="./assets/jpg/w50b-component-variables.jpg" alt="A grid of each UI and element state in the registration flow" height="780" width="1053">
+                <h3>Logged in experience</h3>
+                <p>Once registered, users were brought into a new logged-in environment that opened up the full capabilities of the Preference Centre. I designed a dashboard that allowed users to manage their favourites, build and edit lists, update personal information, and control their content preferences.</p>
+                <img class="modal-target"  src="./assets/jpg/w50b-sign-in-laptop.jpg" alt="An open laptop on a table, featuring the pop-up modal for The World's 50 Best log in" height="780" width="1053">
+                <p>The dashboard interface prioritised simplicity and clarity, with easy access to each feature through clean navigation and well-structured layouts. The overall experience was designed to be welcoming and intuitive, encouraging users to return regularly and interact with the content in a way that felt tailored to them.</p>
+                <img class="modal-target" src="./assets/jpg/w50b-dashboard.jpg" alt="Desktop and mobile screens for The World's 50 Best Preference Centre dashboard" height="780" width="1053">
+                <h3>Interactive elements</h3>
+                <p>To support the new functionality without overhauling the existing site design, I created interactive UI components that integrated smoothly into the current system.</p>
+                <img class="modal-target" src="./assets/jpg/w50_card_states.jpg" alt="A row of establishment cards that show UI state when users interact with the heart and list icons" height="780" width="1053">
+                <p>I designed “favourite” and “add to list” icons that appeared on establishment cards and profiles. These elements were crafted to match the site’s visual style while remaining easy to use and visually distinct.</p>
+                <p>The goal was to introduce new capabilities without disrupting the familiar look and feel of the brand. These micro-interactions were also designed with touch targets and accessibility in mind, ensuring a smooth experience across devices.</p>
+                <img class="modal-target" src="./assets/jpg/w50b-interactive-elements.jpg" alt="Desktop and mobile screens of the establishment cards on the 1 - 50 list" height="780" width="1053">
+                <img class="modal-target" src="./assets/jpg/w50b-add-to-list.jpg" alt="Someone tapping a mobile screen of the Add to List pop-up modal" height="780" width="1053">
+
+                <!-- The Modal -->
+                <div id="modal" class="modal">
+                    <span id="modal-close" class="modal-close"></span>
+                    <div class="modal-content-wrapper">
+                        <img id="modal-content" class="modal-content">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="next-project">
+        <a class="project-container"  href="/worlds-best-sommeliers-selection.html">
+            <p class="sub-headline">Next Project</p>
+            <h2>World's Best Sommeliers’ Selection</h2>
+
+            <div class="next-img">
+                <img src="./assets/jpg/worldsbestsommerliersselection-thumb.jpg" alt="An open laptop on an office desk showing the homepage hero of the World's Best Sommmelier Selection">
+            </div>
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <a class="footer_logo" href="/index.html" title="Visit Caitlin Watson's homepage">Caitlin Watson</a>
+            <a class="back-to-top" href="#top" title="Scroll to the top of the page">
+                back to top 
+            </a>
+        </div>
+        <p class="footer-author">
+            coded by Caitlin
+        </p>
+    </footer>
+</body>
+
+<script>
+
+    /* Burger mobile menu */
+
+    var burgerMenu = document.getElementById('burger-menu');
+
+    var overlay = document.getElementById('menu');
+
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle("open");
+        overlay.classList.toggle("overlay");
+    });
+
+</script>
+
+<script>
+    
+    // Modal Setup
+    var modal = document.getElementById('modal');
+
+    var modalClose = document.getElementById('modal-close');
+    modalClose.addEventListener('click', function() { 
+    modal.style.display = "none";
+    });
+
+    // global handler
+    document.addEventListener('click', function (e) { 
+        if (e.target.className.indexOf('modal-target') !== -1) {
+            var img = e.target;
+            var modalImg = document.getElementById("modal-content");
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+        }
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+</script>
+
+</html>

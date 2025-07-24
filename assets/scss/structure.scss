@@ -1,0 +1,41 @@
+$color-light-bg: rgba(248, 248, 247); // Brand Background
+$color-black: rgba(28, 29, 32); // Brand Black
+$color-white: rgba(255, 255, 255); // Brand White
+$color-white: rgba(255, 255, 255); // Brand White
+$color-grey-1: rgba(231, 231, 228); // Grey -1
+$color-grey-2: rgba(149, 149, 133); // Grey 2
+$color-grey-3: rgba(95, 95, 82); // Grey 3
+
+html {
+    background-color: $color-light-bg;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Base grid */
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 0;
+
+    @include tablet {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+main {
+    box-sizing: border-box;
+    max-width: 164rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
