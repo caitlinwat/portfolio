@@ -74,6 +74,18 @@
 
         .project-card {
 
+            .pword-tag {
+                background: $color-grey-1;
+                border-radius: .8rem;
+                color: $color-grey-3;
+                font-size: 1.4rem;
+                left: 1.6rem;
+                padding: .8rem;
+                position: absolute;
+                top: 1.6rem;
+                z-index: 1;
+            }
+
             .project-thumb {
                 border-radius: 2.4rem;
                 display: flex;
